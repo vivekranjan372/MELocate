@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <fragment
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:layout="@android:layout/simple_dropdown_item_1line"
+        tools:context="com.arcias.melocate.activity.FindLocation"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/tool_bar"
+        android:padding="12dp"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_marginStart="10dp"
+        android:id="@+id/search_bar"
+        android:hint="Enter Email/Mobile No.."/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_alignParentEnd="true"
+        android:autofillHints="Search"
+        android:id="@+id/search"
+        android:src="@drawable/ic_search"/>
+
+</RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+<ImageView
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_alignParentStart="true"
+    android:layout_margin="20dp"
+    android:id="@+id/calculate_distance"
+    android:src="@drawable/ic_calculate_distance"
+    android:visibility="gone"
+    android:layout_below="@+id/tool_bar"/>
+</RelativeLayout>

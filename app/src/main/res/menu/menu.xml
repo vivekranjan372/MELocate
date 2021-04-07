@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="Map Activity">
+    <menu>
+        <item
+            android:title="Home"
+            android:id="@+id/nav_home"
+android:icon="@drawable/ic_home"/>
+<item
+    android:title="My Location"
+    android:id="@+id/nav_my_location"
+    android:icon="@drawable/ic_my_location"/>
+        <item
+            android:title="Find Location"
+            android:icon="@drawable/ic_find_location"
+            android:id="@+id/nav_find_location"/>
+    </menu>
+</item>
+<item
+    android:title="Info">
+<menu>
+    <item
+        android:title="My Profile"
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_profile"/>
+
+    <item
+        android:title="Log Out"
+        android:id="@+id/nav_log_out"
+        android:icon="@drawable/ic_log_out"/>
+    <item
+        android:title="Delete Account"
+        android:id="@+id/nav_acc_delete"
+        android:icon="@drawable/ic_delete"
+        android:iconTint="@color/colorPrimaryDark"/>
+</menu>
+</item>
+    <item
+        android:title="About">
+        <menu>
+<item
+    android:title="About App"
+    android:id="@+id/about_app"
+    android:icon="@drawable/ic_about_app"/>
+<item
+    android:title="feedback"
+    android:id="@+id/feedback"
+    android:icon="@drawable/ic_feed_back"
+    />
+
+        </menu>
+
+    </item>
+</menu>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.arcias.melocate.activity.RegisterActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:layout_margin="40dp"
+        android:textColor="@android:color/holo_green_light"
+android:background="@drawable/background"
+        android:text="Registration "
+        android:padding="20dp"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/title"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="0"
+                android:text="First Name : "
+
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="?android:attr/windowBackground"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/first_name"
+                android:inputType="textPersonName"
+                android:textSize="20sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="0"
+                android:text="Last Name : "
+
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="?android:attr/windowBackground"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/last_name"
+                android:inputType="textPersonName"
+                android:textSize="20sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="0"
+                android:text="Email : "
+
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="?android:attr/windowBackground"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/email"
+                android:inputType="textEmailAddress"
+                android:textSize="20sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="0"
+                android:text="Mobile No : "
+
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="?android:attr/windowBackground"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/mobile_number"
+                android:inputType="number"
+                android:textSize="20sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="0"
+                android:text="Password : "
+
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="?android:attr/windowBackground"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                android:textSize="20sp"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/loginView"
+                android:textSize="15sp"
+                android:text="Already have a Account ??  "
+                android:layout_marginStart="50dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/loginView"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:id="@+id/login_view"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:textColor="@android:color/black"
+                android:layout_alignBaseline="@+id/loginView"
+                android:background="?android:attr/windowBackground"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/register"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/background"
+            android:layout_gravity="center"
+            android:textColor="@android:color/holo_green_light"
+            android:text="Register"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

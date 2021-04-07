@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "821360051493",
+    "firebase_url": "https://tracking-app-a0486.firebaseio.com",
+    "project_id": "tracking-app-a0486",
+    "storage_bucket": "tracking-app-a0486.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821360051493:android:b84f1e1b202e1601a446cc",
+        "android_client_info": {
+          "package_name": "com.arcias.melocate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiwvo2N7eN46Ya7hWzs6FzXVhhkFb009M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

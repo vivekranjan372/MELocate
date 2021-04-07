@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.arcias.melocate.activity.MainFrame">
+<androidx.drawerlayout.widget.DrawerLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout">
+
+
+       <androidx.coordinatorlayout.widget.CoordinatorLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/coordinator_layout">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+           <com.google.android.material.appbar.AppBarLayout
+               android:layout_width="match_parent"
+               android:id="@+id/app_bar"
+               android:layout_height="wrap_content">
+               <androidx.appcompat.widget.Toolbar
+                   android:layout_width="match_parent"
+                   android:id="@+id/tool_bar"
+                   android:layout_height="?attr/actionBarSize"
+                   android:background="@android:color/white"/>
+           </com.google.android.material.appbar.AppBarLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical"
+                   android:background="@android:color/holo_green_dark"
+                   android:layout_below="@+id/app_bar">
+                   <ScrollView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       >
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:padding="25dp"
+                           android:layout_marginTop="30dp"
+                           android:orientation="vertical">
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="50dp"
+                               android:text=" My Location"
+                               android:id="@+id/my_location"
+                               android:textAllCaps="false"
+                               android:textSize="27sp"
+                               android:textColor="@color/colorPrimary"
+                               android:background="@drawable/text_background"
+                               android:gravity="center"/>
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="50dp"
+                               android:text="Find Location"
+                               android:textAllCaps="false"
+                               android:id="@+id/find_location"
+                               android:layout_marginTop="15dp"
+                               android:textSize="27sp"
+                               android:textColor="@color/colorPrimary"
+                               android:background="@drawable/text_background"
+                               android:gravity="center"/>
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="50dp"
+                               android:text="My Information"
+                               android:textAllCaps="false"
+                               android:id="@+id/my_profile"
+                               android:layout_marginTop="15dp"
+                               android:textSize="27sp"
+                               android:textColor="@color/colorPrimary"
+                               android:background="@drawable/text_background"
+                               android:gravity="center"/>
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="50dp"
+                               android:text="Friends List"
+                               android:textAllCaps="false"
+                               android:id="@+id/friend_list"
+                               android:layout_marginTop="15dp"
+                               android:textSize="27sp"
+                               android:textColor="@color/colorPrimary"
+                               android:background="@drawable/text_background"
+                               android:gravity="center"/>
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="50dp"
+                               android:text="Feedback"
+                               android:id="@+id/feedback"
+                               android:textAllCaps="false"
+                               android:layout_marginTop="15dp"
+                               android:textSize="27sp"
+                               android:textColor="@color/colorPrimary"
+                               android:background="@drawable/text_background"
+                               android:gravity="center"/>
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="50dp"
+                               android:text="About App"
+                               android:id="@+id/about_us"
+                               android:textAllCaps="false"
+                               android:layout_marginTop="15dp"
+                               android:textSize="27sp"
+                               android:textColor="@color/colorPrimary"
+                               android:background="@drawable/text_background"
+                               android:gravity="center"/>
+
+
+                       </LinearLayout>
+
+                   </ScrollView>
+
+               </LinearLayout>
+               <FrameLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/frame_container"
+               android:layout_below="@+id/app_bar"/>
+
+   </RelativeLayout>
+       </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        app:menu="@menu/menu"
+        android:layout_gravity="start"
+
+
+        />
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+</RelativeLayout>

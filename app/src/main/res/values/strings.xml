@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">mELocate</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="openNavDrawer">Open Navigation Drawer</string>
+    <string name="closeNavDrawer">Close Navigation Drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_my_location">Map</string>
+    <string name="feedback">Here you can Report about bugs ,issues and give suggestions by your valuable feedback</string>
+    <string name="about_app">
+        Here we have a new app comes among you guys
+        if you are looking for friends or family members where he/she exactly is,
+        now you can find them in very easy way.
+        this app is basically for family members and close friends whom you want to find them in a seconds.
+    </string>
+    <string name="brief_description">
+        this app based on google map service which locate your location as well as
+        your friends and families members location,
+        it has following services..
+    </string>
+    <string name="find_location">
+        it has two ways of finding location either by email id through which user has registered
+        or by number simply you have to enter the number of user whom you want find their location
+        in the search box and you will get the result according to the given input.
+    </string>
+    <string name="condition_result">
+        if you might looking for person location then u could get the result but it has some
+        circumstances such that the user whom you looking for their location
+        must be join with our app
+        otherwise you will not able to get the location of that user
+    </string>
+    <string name="profile_info">
+        Basically in this category all the user information will be contain here
+        He/She can change basic information like changing the user password and numbers.
+    </string>
+    <string name="friends_group">
+        In this block,you will get the location of all users and family members who are in your contact list
+        and according to their current location you will locate them all of users in a same block
+        so, in this manner, no you required to get each of people location to find them
+    </string>
+    <string name="about_developer">
+My self vivek ranjan, i am of third year student and currently doing B.Tech from L.N.J.P.I.T college of chapra
+        from computer science engineering branch,
+        i am highly optimised with your valuable feedback about this app
+        and i am recommend each of my colleague friends to share with all of their friends
+        with a great remarks and give me strength to build such wonderful application.
+        at last thanks all of you guys who support me to do this..
+
+    </string>
+    <string name="slide_find_location">
+
+          Keep Touch with the families and friends.
+        In this category you will be to get friends and family location based on your contact list.
+
+    </string>
+    <string name="slide_my_information">
+        Personal information such as name,mobile number, email and so on mention here,
+        you can modify it based on your need
+    </string>
+    <string name="slide_quick_easy">
+        In Seconds you can get location with quick and easy steps just follow the guided steps
+    </string>
+</resources>

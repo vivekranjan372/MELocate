@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main_frame"
+    android:layout_height="match_parent"
+    tools:context="com.arcias.melocate.activity.FeedbackActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tool_bar"
+        android:background="@android:color/white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar"
+        android:id="@+id/linear"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/feedback"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:id="@+id/radio_group">
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/issue_radio"
+                android:layout_weight="1"
+                android:text="issues"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"
+
+                />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="suggestions"
+                android:id="@+id/suggestion_radio"
+                />
+
+        </RadioGroup>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:id="@+id/report_text"
+            android:inputType="text"
+            android:maxLines="6"
+            />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+
+        android:layout_alignParentBottom="true"
+        android:text="Submit Report"
+        android:background="@android:color/transparent"
+        android:id="@+id/submit_button"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginStart="6dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/submit_image"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/submit_button"
+        android:src="@drawable/ic_send"/>
+
+</RelativeLayout>
